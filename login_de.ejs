@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <script defer src="/site.js"></script>
+    <title>Document</title>
+</head>
+<body class="body">
+    <div id="side">
+        <img id="logo" src="/DreisamLogo.png" alt="" onclick="togglenav()">
+    </div>
+    <div id="NavBar" class="topnav">
+        <a class="active" href="/de">Home</a>
+        <br>
+        <a href="/minister/de" class="padding">Ministerien</a>
+        <br>
+        <a href="/unternehmen" class="padding">Unternehmen</a>
+        <br>
+        <a href="/gesetze" class="padding">Gesetze</a>
+        <br>
+        <a href="/dreisamrepublik/de" class="padding">Was ist die Dreisamrepublik?</a>
+        <br>
+        <a href="/contact/de" class="padding">Kontakt</a>
+        <br>
+        <br>
+        <a href="/users/de" class="padding"></a>
+        <button onclick="changeLanguage('english')" id="language_button"><img src="/flag_germany.png" class="language_image"></button>
+    </div>
+    <div id="main">
+        <div class="window">
+            <form action="/users" method="post">
+                <div class="inputbox">
+                    <input required="required" type="text" name="user">
+                    <label for="user">Benutzer</label>
+                    <i></i>
+                </div>   
+                <br>
+                <div class="inputbox">
+                    <input required="required" type="password" name="pwd">
+                    <label for="pwd">Passwort</label>
+                    <i></i>
+                </div>  
+                <br>
+                <div style="color: red;"></div>
+                <br>
+                <div>
+                    <button name="Login" value="loading" type="submit" class="loginbtn bn">Anmeldung</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </body>
+</html>
